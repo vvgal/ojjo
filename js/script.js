@@ -23,11 +23,19 @@ $(document).ready(function() {
     });
 
     // Change favicon
-    $.iMissYou({
-        title: "OJJO",
-        favicon: {
-            enabled: true,
-            src:'icons/favicon.svg'
+    // $.iMissYou({
+    //     title: "OJJO",
+    //     favicon: {
+    //         enabled: true,
+    //         src:'icons/favicon.svg'
+    //     }
+    // });
+
+    $.mFancyTitle({
+        mftMissYou: false,
+        mftMissYouFavicon: {
+            // 'apple-touch-icon-precomposed': 'path-to/apple-touch-icon-152x152.png',
+            'shortcut icon': 'icons/black-favicon.svg'
         }
     });
 });
