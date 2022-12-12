@@ -27,7 +27,7 @@ $(document).ready(function() {
         title: "OJJO",
         favicon: {
             enabled: true,
-            src:'../icons/favicon.svg'
+            src:'icons/favicon.svg'
         }
     });
 });
