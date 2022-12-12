@@ -4,36 +4,67 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/nullstyle.css">
-  <link rel="stylesheet" href="css/style.min.css">
   <title>OJJO</title>
+  <link rel="shortcut icon" href="icons/black-favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/nullstyle.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
   <header class="promo">
-    <div class="container">
-      <div class="promo__header">
-        <nav class="promo__navigation">
-          <ul class="promo__list">
-            <li><a class="promo__link" href="#">Контрагентам</a></li>
-            <li><a class="promo__link" href="#">Дизайнерам</a></li>
-            <li><a class="promo__link" href="#">Вакансии</a></li>
-          </ul>
-        </nav>
-        <div class="promo__logo"><img src="img/logo.svg" alt="logo"></div>
-        <div class="promo__account">
-          <ul class="promo__list promo__list_account">
-            <li><a href="#" class="promo__link"><img src="icons/search.png" alt="icon"></a></li>
-            <li><a href="#" class="promo__link">Поиск</a></li>
-            <li><a href="#" class="promo__link">Вход/Регистрация</a></li>
-            <li><a href="#" class="promo__link"><img src="icons/person.png" alt="icon"></a></li>
-            <li><a href="#" class="promo__link"><img src="icons/heart.png" alt="icon"></a></li>
-          </ul>
+    <div class="promo__top">
+      <div class="container">
+        <div class="promo__header">
+          <nav class="promo__navigation">
+            <ul class="promo__list">
+              <li><a class="promo__link" href="#">Контрагентам</a></li>
+              <li><a class="promo__link" href="#">Дизайнерам</a></li>
+              <li><a class="promo__link" href="#">Вакансии</a></li>
+            </ul>
+          </nav>
+          <div class="promo__logo"><img src="img/logo.svg" alt="logo"></div>
+          <div class="promo__account">
+            <ul class="promo__list promo__list_account">
+              <li><a href="#" class="promo__link"><img src="icons/search.png" alt="icon"></a></li>
+              <li><a href="#" class="promo__link">Поиск</a></li>
+              <li><a href="#" class="promo__link">Вход/Регистрация</a></li>
+              <li><a href="#" class="promo__link"><img src="icons/person.png" alt="icon"></a></li>
+              <li><a href="#" class="promo__link"><img src="icons/heart.png" alt="icon"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <h1>Долго, дорого, богато!</h1>
-      <div class="promo__label">
-        <a href="#"><div class="promo__button button">каталог изделий</div></a>
+    </div>
+    <div class="promo__bottom">
+      <div class="container">
+        <h1>Долго, дорого, богато!</h1>
+        <div class="promo__label">
+          <a href="#"><div class="promo__button button">каталог изделий</div></a>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 promo__partners">
+            <a href="#"><img src="img/partners.png" alt="png"></a>
+          </div>
+          <div class="col-md-2 promo__partners">
+            <a href="#"><img src="img/partners.png" alt="png"></a>
+          </div>
+          <div class="col-md-2 promo__partners">
+            <a href="#"><img src="img/partners.png" alt="png"></a>
+          </div>
+          <div class="col-md-2 promo__partners">
+            <a href="#"><img src="img/partners.png" alt="png"></a>
+          </div>
+          <div class="col-md-2 promo__partners">
+            <a href="#"><img src="img/partners.png" alt="png"></a>
+          </div>
+          <div class="col-md-2 promo__partners">
+            <a href="#"><img src="img/partners.png" alt="png"></a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -89,8 +120,8 @@
           <a href="#"><img src="img/bracelets.jpg" alt="bracelets"></a>
           <div>Браслеты</div>
         </div>
-        <div class="events__item events__item_active" id="clocks">
-          <a href="#"><img src="img/clocks.jpg" alt="clocks"></a>
+        <div class="events__item events__item_active" id="watches">
+          <a href="#"><img src="img/watches.jpg" alt="watches"></a>
           <div>Часы</div>
         </div>
       </div>
@@ -115,28 +146,30 @@
       <div class="media__subtitle subtitle">Полезные статьи</div>
       <h2 class="media__title title">Лучшие советы по подбору дорогих подарков</h2>
       <div class="media__items">
-        <div class="media__item">
-          <a href="#"><img src="img/hands.png" alt="img"></a>
-          <div>
-            Как выбрать <br>
-            часы для своей <br>
-            будущей жены
+        <div class="row">
+          <div class="col-md-4 media__item">
+            <a href="#"><img src="img/hands.png" alt="img"></a>
+            <div>
+              Как выбрать <br>
+              часы для своей <br>
+              будущей жены
+            </div>
           </div>
-        </div>
-        <div class="media__item">
-          <a href="#"><img src="img/crown.png" alt="img"></a>
-          <div>
-            Запонки для мужа: <br>
-            7 ключевых правил <br>
-            покупки аксессуара
+          <div class="col-md-4 media__item">
+            <a href="#"><img src="img/crown.png" alt="img"></a>
+            <div>
+              Запонки для мужа: <br>
+              7 ключевых правил <br>
+              покупки аксессуара
+            </div>
           </div>
-        </div>
-        <div class="media__item">
-          <a href="#"><img src="img/wedding.png" alt="img"></a>
-          <div>
-            Как выбрать <br>
-            обручальные кольца <br>
-            молодоженам
+          <div class="col-md-4 media__item">
+            <a href="#"><img src="img/wedding.png" alt="img"></a>
+            <div>
+              Как выбрать <br>
+              обручальные кольца <br>
+              молодоженам
+            </div>
           </div>
         </div>
       </div>
@@ -145,13 +178,13 @@
       </div>
       <a href="#"><div class="media__subtitle media__subtitle_link subtitle">#ojjo_jewerly</div></a>
       <h2 class="media__title title">Мы в социальных сетях</h2>
-      <div class="media__row">
-        <div class="media__column media__column_video"><video src="№" controls></video></div>
-        <div class="media__column"><img src="img/first.jpg" alt="img"></div>
-        <div class="media__column"><img src="img/second.jpg" alt="img"></div>
-        <div class="media__column"><img src="img/third.jpg" alt="img"></div>
-        <div class="media__column"><img src="img/fourth.jpg" alt="img"></div>
-        <div class="media__column media__column_video"><video src="№" controls></video></div>
+      <div class="row media__row">
+        <div class="col-md-6 media__column media__column_video"><video src="#" controls></video></div>
+        <div class="col-md-3 media__column"><img src="img/first.jpg" alt="img"></div>
+        <div class="col-md-3 media__column"><img src="img/second.jpg" alt="img"></div>
+        <div class="col-md-3 media__column"><img src="img/third.jpg" alt="img"></div>
+        <div class="col-md-3 media__column"><img src="img/fourth.jpg" alt="img"></div>
+        <div class="col-md-6 media__column media__column_video"><video src="#" controls></video></div>
       </div>
     </div>
   </section>
@@ -176,8 +209,75 @@
     </div>
   </section>
 
+  <section class="footer">
+    <div class="container">
+      <div class="row footer__row">
+        <div class="col-md-3 footer__item">
+          <div class="footer__title">Полезные ссылки</div>
+          <hr class="footer__hr_short">
+          <div class="footer__content">
+            <ul class="footer__list footer__links-list">
+              <li class="footer__link"><a href="#">Доставка</a></li>
+              <li class="footer__link"><a href="#">Оплата</a></li>
+              <li class="footer__link"><a href="#">Акции</a></li>
+              <li class="footer__link"><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 footer__item">
+          <div class="footer__title">Оплата</div>
+          <hr class="footer__hr_short">
+          <div class="footer__content">
+            <div class="footer__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+            </div>
+            <div class="footer__icons">
+              <img src="icons/visa.png" alt="visa">
+              <img src="icons/master-card.png" alt="mastercard">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 footer__item">
+          <div class="footer__title">Контакты</div>
+          <hr class="footer__hr_short">
+          <div class="footer__content">
+            <ul class="footer__list footer__contacts-list">
+              <li class="footer__link footer__contact"><a href="tel:+78122345655">8 (812) 234-56-55</a></li>
+              <li class="footer__link footer__contact"><a href="tel:+78122345655">8 (812) 234-56-55</a></li>
+              <li class="footer__link footer__contact footer__contact_email">ojjo@ojjo.ru</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 footer__item">
+          <div class="footer__title">Социальные сети</div>
+          <hr class="footer__hr_short">
+          <div class="footer__content">
+            <div class="footer__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+            </div>
+            <div class="footer__icons">
+              <a href="#"><img src="icons/youtube.png" alt="icon"></a>
+              <a href="#"><img src="icons/vk.png" alt="icon"></a>
+              <a href="#"><img src="icons/facebook.png" alt="icon"></a>
+              <a href="#"><img src="icons/telegram.png" alt="icon"></a>
+              <a href="#"><img src="icons/e.png" alt="icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="footer__hr">
+      <ul class="footer__footer">
+        <li><a href="#">(c) 2020 OJJO jewelry</a></li>
+        <li><a href="#">Договор публичной офферты</a></li>
+        <li><a href="#">Контрагентам</a></li>
+        <li><a href="#">Тренировочная верстка<br>made by vvgal</a></li>
+      </ul>
+    </div>
+  </section>
+
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/jquery.mfancytitle-0.4.1.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -10,15 +10,23 @@ $(document).ready(function() {
             $('.events__item').addClass('events__item_active');
         } else if (idx == 1) {
             $('.events__item').removeClass('events__item_active');
-            $('#rings, #cufflinks, #clocks').addClass('events__item_active');
+            $('#rings, #cufflinks, #watches').addClass('events__item_active');
         } else if (idx == 2) {
             $('.events__item').removeClass('events__item_active');
-            $('#rings, #earrings, #pendants, #bracelets, #clocks').addClass('events__item_active');
+            $('#rings, #earrings, #pendants, #bracelets, #watches').addClass('events__item_active');
         } else if (idx == 3) {
             $('.events__item').removeClass('events__item_active');
-            $('#cufflinks, #clocks').addClass('events__item_active');
+            $('#cufflinks, #watches').addClass('events__item_active');
         } else {
             $('.events__item').addClass('events__item_active');
+        }
+    });
+
+    // Change favicon
+    $.mFancyTitle({
+        mftMissYou: false,
+        mftMissYouFavicon: {
+            'shortcut icon': '../icons/favicon.svg'
         }
     });
 });
