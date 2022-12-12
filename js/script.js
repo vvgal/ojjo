@@ -23,10 +23,11 @@ $(document).ready(function() {
     });
 
     // Change favicon
-    $.mFancyTitle({
-        mftMissYou: false,
-        mftMissYouFavicon: {
-            'shortcut icon': '../icons/favicon.svg'
+    $.iMissYou({
+        title: "OJJO",
+        favicon: {
+            enabled: true,
+            src:'../icons/favicon.svg'
         }
     });
 });
