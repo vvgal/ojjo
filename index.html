@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <header class="promo">
+  <header id="up" class="promo">
     <div class="promo__top">
       <div class="container">
         <div class="promo__header">
@@ -259,7 +259,7 @@
         </ul>
         <div class="mailing__form-wrapper">
           <form action="#" class="mailing__form form">
-            <input name="email" placeholder="Ваш E-mail" type="email">
+            <input name="email" required placeholder="Ваш E-mail" type="email">
             <button class="mailing__button button">отправить</button>
           </form>
         </div>
@@ -333,10 +333,27 @@
     </div>
   </section>
 
+  <div class="overlay">
+    <div class="modal">
+      <div class="modal__exit">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="modal__text">
+        Спасибо за подписку!
+      </div>
+    </div>
+  </div>
+
+  <a href="#up" class="pageup">
+    <img src="icons/arrow.svg" alt="up">
+  </a>
+
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <!-- <script src="js/iMissYou.min.js"></script> -->
   <script src="js/jquery.mfancytitle-0.4.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

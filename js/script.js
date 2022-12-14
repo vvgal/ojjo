@@ -80,7 +80,64 @@ $(document).ready(function() {
         menuItem.forEach(item => {
             item.addEventListener('click', () => {
                 menu.classList.toggle('mobile-menu_active');
-            })
-        })
+            });
+        });
+    });
+
+    // Validate form
+    $('form').validate({
+        rules: {
+            email: {
+            required: true,
+            email: true
+            }
+        },
+        messages: {
+            email: {
+            required: "Пожалуйста, введите e-mail",
+            email: "Введите корректный e-mail"
+            }
+        }
+    });
+
+    // Mailer
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('form').trigger('reset');
+        });
+        return false;
     })
+    
+    // Modal
+    $('.mailing__button').on('click', function() {
+        if ($('input[name="email"]').hasClass('valid')) {
+            $('.overlay, .modal').fadeIn('fast');
+        } 
+    });
+    $('.modal__exit').on('click', function() {
+        $('.overlay, .modal').fadeOut('fast');
+    });
+
+    // Scroll page up
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1400) {
+          $('.pageup').fadeIn();
+        } else {
+          $('.pageup').fadeOut();
+        }
+    });
+  
+    $("a[href=#up]").click(function() {
+    let _href = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(_href).offset().top+"px"
+    });
+    return false;
+    });
 });
